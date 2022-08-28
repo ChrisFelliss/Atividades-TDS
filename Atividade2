@@ -1,0 +1,28 @@
+print(8*2)
+print('''
+///////////////////
+''')
+print(2025-2003)
+print(2025-1998)
+print(2050-2022)
+print('''
+///////////////////
+''')
+nascimento = int(input('Em que ano você nasceu '))
+idade25 = 2022-nascimento
+print(f'Em 2025 você terá {idade25} anos! ')
+print('''
+///////////////////
+''')
+born = int(input('Em que ano você nasceu? '))
+ano = int(input('Para quando ano você quer saber sua idade? '))
+print(f'No ano de {ano} você terá {ano-born} anos!')
+print('''
+///////////////////
+''')
+ano1 = int(input('Quantos anos você tem? '))
+print(f'''Se você fosse um cachorro, teria {ano1*7} anos!!
+
+  '0'_____'
+     || ||
+''')
