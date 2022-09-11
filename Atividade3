@@ -1,0 +1,60 @@
+import datetime
+
+n1 = int(input('Número 1 '))
+n2 = int(input('Número 2 '))
+n11 = str(n1)
+n22 = str(n2)
+
+print(f'\n{n1} + {n2} = {n1 + n2}')
+print(f'{n1} concatenado à {n2} = {n11 + n22}')
+print(f'{n1} * {n2} = {n1 * n2}')
+print(f'{n1} "*" {n2} = {n11 * n2}')
+print(f'{n1} Dividido {n2} = {n1 / n2}')
+print(f'{n1} dividido arrendondado {n2} = {n1 // n2}')
+print(f'{n1} elevado à {n2} = {n1 ** n2}')
+print(f'O resto da divisão entre {n1} e {n2} = {n1 % n2}')
+
+# //////////////////////////////////
+
+count = 0
+print('Que dia você nasceu?(dd//mm/aaaa)')
+dia = int(input('Dia: '))
+mes = int(input('Mês: '))
+ano = int(input('Ano: '))
+print(f'{dia}/{mes}/{ano}')
+hojed = datetime.date.today().day
+hojem = datetime.date.today().month
+hojea = datetime.date.today().year
+print(hojea, hojem, hojed)
+for i in range(ano, hojea):
+    for j in range(mes, 13):
+        for k in range(dia, 31):
+            count += 1
+        dia = 0
+    mes = 1
+print(f'Você viveu durante {count} dias! Um novo record pessoal\n')
+
+# //////////////////////////////////
+
+c = int(input('Qual a temperatura(Cº): '))
+while True:
+    if c < -273:
+        print('Temperatura inválida!')
+        c = int(input('Qual a temperatura(Cº): '))
+    else:
+        fa = (c * (9 / 5)) + 32
+        print(int(fa))
+        print('')
+        break
+
+# //////////////////////////////////
+
+value = int(input('Digite um número: '))
+print(bool(value > 100), '\n')
+
+# //////////////////////////////////
+
+nota = []
+for i in range(1, 4):
+    nota += [int(input(f'Digite a {i}º nota: '))]
+print(((nota[0] * 2) + (nota[1] * 3) + (nota[2] * 5)) / 10)
