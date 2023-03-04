@@ -51,7 +51,18 @@ class Classe():
         return '▬' * volume
 
 if __name__ == '__main__':
-    filme1 = Classe("Bts", "108", "Documentário", "2022", "Jung Cook", "12", False, True, 10)
+    filme1 = Classe(
+        nome="Bts",
+        duracao="108",
+        genero="Documentário",
+        lancamento="2022",
+        diretor="Jung Cook",
+        class_indicativa="12",
+        tela_cheia=False,
+        pausado=True,
+        volume=10
+    )
+    
     print(filme1.nome)
     print(filme1.duracao)
     print(filme1.genero)
@@ -61,20 +72,27 @@ if __name__ == '__main__':
     print(filme1.tela_cheia)
     print(filme1.pausado)
     print(filme1.volume)
+    
     print(filme1.diminuirVol(filme1.volume))
     print(filme1.diminuirVol(filme1.volume))
     print(filme1.diminuirVol(filme1.volume))
     print(filme1.diminuirVol(filme1.volume))
+    
     print(filme1.aumentarVol(filme1.volume))
     print(filme1.aumentarVol(filme1.volume))
     print(filme1.aumentarVol(filme1.volume))
     print(filme1.aumentarVol(filme1.volume))
+    
     print(filme1.voltar10(filme1.duracao))
+    
     print(filme1.avancar10(filme1.duracao))
+    
     print(filme1.telacheia(filme1.tela_cheia))
     print(filme1.telacheia(filme1.tela_cheia))
     print(filme1.telacheia(filme1.tela_cheia))
+    
     print(filme1.pausar(filme1.pausado))
     print(filme1.pausar(filme1.pausado))
+    
     print(filme1.continuar(filme1.pausado))
     print(filme1.continuar(filme1.pausado))
